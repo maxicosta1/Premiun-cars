@@ -33,7 +33,7 @@ nav{
 .menu a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
 
 }
 
@@ -45,9 +45,24 @@ h1{
     text-align: center;
 }
 
-.busqueda{
+.busqueda {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 0px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.busqueda svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.busqueda input {
+    border: none;          
+    outline: none;         
+    width: 100%;
 }
