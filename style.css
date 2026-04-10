@@ -4,6 +4,7 @@ body{
     font-family: Arial, sans-serif;
 }
 
+/* HEADER */
 header{
     background-color: white;
     border-radius: 20px;
@@ -11,22 +12,29 @@ header{
     padding: 10px;
 }
 
+/* NAVBAR */
 nav{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
 }
 
+/* LOGO */
+h1{
+    margin: 0;
+    margin-left: 20px;
+    font-size: 2rem;
+}
+
+/* MENÚ */
 .menu{
     display: flex;
-    padding-right: 20px;
+    gap: 40px; /* 🔥 mejor que margin-left */
     margin: 0;
+    padding: 0;
 }
 
 .menu li{
-    margin-left: 50px;
     list-style: none;
 }
 
@@ -34,25 +42,24 @@ nav{
     text-decoration: none;
     color: black;
     font-size: 15px;
-
 }
 
-h1{
-    margin: 0;
-    margin-right: 10px;
-    margin-left: 20px;
-    font-size: 2rem;
-    text-align: center;
+/* CONTENEDOR DERECHA (busqueda + login) */
+.right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
 }
 
+/* BUSCADOR */
 .busqueda {
     display: flex;
     align-items: center;
-    border: 2px solid black;
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     padding: 5px 10px;
     background-color: white;
-    margin-right: 20px;
 }
 
 .busqueda svg {
@@ -64,5 +71,29 @@ h1{
 .busqueda input {
     border: none;          
     outline: none;         
-    width: 100%;
+    width: 150px;
+}
+
+.icono-user {
+    width: 24px;
+    height: 24px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    position: fixed;      
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
