@@ -1,12 +1,12 @@
 body{
-    background-color: grey;
+    background-color: #006039;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 /* HEADER */
 header{
-    background-color: #006039;
+    background-color: #a37e2c;
     border-radius: 20px;
     margin: 20px;
     padding: 10px;
@@ -21,7 +21,7 @@ nav{
 
 /* LOGO */
 h1{
-    color: #a37e2c;
+    color: white;
     margin: 0;
     margin-left: 20px;
     font-size: 2rem;
@@ -78,6 +78,7 @@ h1{
 .icono-user {
     width: 24px;
     height: 24px;
+    color: white;
 }
 
 .login {
@@ -88,7 +89,7 @@ h1{
 
 /* FOOTER */
 .footer {
-    background-color: #006039;
+    background-color: #a37e2c;
     border-radius: 20px;
     margin: 20px;
     padding: 15px;
