@@ -1,0 +1,115 @@
+body{
+    background-color: #041f1e;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+    background-color: #cd8b53;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+/* logo */
+.logo{
+    height: 69px;
+    width: auto;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+/* texto logo */
+.texto{
+    height: 69px;
+    width: auto;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* MENÚ */
+.menu{
+    display: flex;
+    gap: 40px; /* mejor que margin-left */
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* CONTENEDOR DERECHA (busqueda + login) */
+.right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+/* BUSCADOR */
+.busqueda {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.busqueda svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.busqueda input {
+    border: none;          
+    outline: none;         
+    width: 150px;
+}
+
+.icono-user {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cd8b53;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}

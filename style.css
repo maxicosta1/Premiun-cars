@@ -1,12 +1,20 @@
 body{
+
     background-color: #004e27;
+
+    background-color: #041f1e;
+
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 /* HEADER */
 header{
+
     background-color: #9b7625;
+
+    background-color: #cd8b53;
+
     border-radius: 20px;
     margin: 20px;
     padding: 10px;
@@ -18,19 +26,30 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-
-/* LOGO */
-h1{
-    color: white;
-    margin: 0;
-    margin-left: 20px;
-    font-size: 2rem;
+.brand{
+    display: flex;
+    align-items: center;
+}
+/* logo */
+.logo{
+    height: 69px;
+    width: auto;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+/* texto logo */
+.texto{
+    height: 69px;
+    width: auto;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 /* MENÚ */
 .menu{
     display: flex;
     gap: 40px; /*  mejor que margin-left */
+    gap: 40px; /* mejor que margin-left */
     margin: 0;
     padding: 0;
 }
@@ -89,7 +108,7 @@ h1{
 
 /* FOOTER */
 .footer {
-    background-color: #a37e2c;
+    background-color: #cd8b53;
     border-radius: 20px;
     margin: 20px;
     padding: 15px;
