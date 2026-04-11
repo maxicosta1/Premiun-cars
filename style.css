@@ -30,7 +30,7 @@ h1{
 /* MENÚ */
 .menu{
     display: flex;
-    gap: 40px; /* 🔥 mejor que margin-left */
+    gap: 40px; /*  mejor que margin-left */
     margin: 0;
     padding: 0;
 }
