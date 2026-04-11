@@ -6,7 +6,7 @@ body{
 
 /* HEADER */
 header{
-    background-color: white;
+    background-color: #006039;
     border-radius: 20px;
     margin: 20px;
     padding: 10px;
@@ -21,6 +21,7 @@ nav{
 
 /* LOGO */
 h1{
+    color: #a37e2c;
     margin: 0;
     margin-left: 20px;
     font-size: 2rem;
@@ -40,7 +41,7 @@ h1{
 
 .menu a{
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     font-size: 15px;
 }
 
@@ -87,7 +88,7 @@ h1{
 
 /* FOOTER */
 .footer {
-    background-color: white;
+    background-color: #006039;
     border-radius: 20px;
     margin: 20px;
     padding: 15px;
@@ -96,4 +97,5 @@ h1{
     bottom: 0;
     left: 0;
     right: 0;
+    color: #ffffff
 }
