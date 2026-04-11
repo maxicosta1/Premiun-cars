@@ -113,3 +113,27 @@ form {
     gap: 15px;
     width: 100%;
 }
+
+.input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #041f1eb3;
+    
+}
+
+.input input{
+    background-color: #041f1e;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a17b27;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
