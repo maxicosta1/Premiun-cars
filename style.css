@@ -115,3 +115,26 @@ nav{
     right: 0;
     color: #ffffff
 }
+
+.auto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 50px;
+}
+
+.autos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.auto img{
+    width: 100%;
+    height: auto;
+}
