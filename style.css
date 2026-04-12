@@ -138,3 +138,39 @@ nav{
     width: 100%;
     height: auto;
 }
+/* carrusel de imagenes */
+.slider-box{
+    width: 1280px;
+    height: auto;
+
+}
+.slider-box ul{
+    animation: slide 20s infinite;
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    
+}
+.slider-box li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+.slider-box img{
+    width: 90%;
+    height: auto;
+    display: block;
+}
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -50%;}
+    45% {margin-left: -50%;}
+    50% {margin-left: -100%;}
+    70% {margin-left: -100%;}   
+    75% {margin-left: -150%;}
+    95% {margin-left: -150%;}
+    100% {margin-left: -200%;}
+
+}
