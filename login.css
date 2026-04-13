@@ -190,7 +190,7 @@ h2{
     z-index: -1;
 }
 
-/* 🔥 ANIMACIÓN DE ENTRADA */
+/*  ANIMACIÓN DE ENTRADA GPT */
 .caja{
     animation: aparecer 0.8s ease-out;
 }
@@ -206,7 +206,7 @@ h2{
     }
 }
 
-/* 🔥 AVATAR CON EFECTO FLOTANTE */
+/*  AVATAR CON EFECTO FLOTANTE GPT */
 .avatar{
     animation: flotar 3s ease-in-out infinite;
 }
@@ -217,7 +217,7 @@ h2{
     100%{ transform: translateY(0); }
 }
 
-/* 🔥 INPUTS INTERACTIVOS */
+/*  INPUTS INTERACTIVOS */
 .input{
     transition: all 0.3s ease;
 }
@@ -228,7 +228,7 @@ h2{
     box-shadow: 0 0 10px rgba(15, 61, 62, 0.4);
 }
 
-/* 🔥 BOTÓN ANIMADO */
+/*  BOTÓN ANIMADO */
 button{
     transition: all 0.3s ease;
 }
