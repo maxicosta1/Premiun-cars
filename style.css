@@ -3,43 +3,36 @@
 }
 
 body{
-    background-color: #041f1e;
+    background: linear-gradient(135deg, #041f1e, #000000);
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
     overflow-x: hidden;
-    overflow-y: auto;
 }
 
 /* HEADER */
 header{
-
-    background-color: #9b7625;
-
-    background-color: #cd8b53;
-
+    background: linear-gradient(135deg, #cd8b53, #9b7625);
     border-radius: 20px;
     margin: 20px;
     padding: 10px;
 }
 
-/* NAVBAR */
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .brand{
     display: flex;
     align-items: center;
 }
-/* logo */
-.logo{
+
+.logo, .texto{
     height: 69px;
-    width: auto;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
 }
-/* texto logo */
+
 .texto{
     height: 69px;
     width: auto;
@@ -47,13 +40,10 @@ nav{
     border-bottom-right-radius: 6px;
 }
 
-/* MENÚ */
+/* MENU */
 .menu{
     display: flex;
-    gap: 40px; /*  mejor que margin-left */
-    gap: 40px; /* mejor que margin-left */
-    margin: 0;
-    padding: 0;
+    gap: 40px;
 }
 
 .menu li{
@@ -62,120 +52,250 @@ nav{
 
 .menu a{
     text-decoration: none;
-    color: #ffffff;
-    font-size: 15px;
+    color: white;
+    position: relative;
 }
 
-/* CONTENEDOR DERECHA (busqueda + login) */
+.menu a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: gold;
+    transition: 0.3s;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+/* derecha */
 .right{
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-right: 20px;
 }
 
-/* BUSCADOR */
-.busqueda {
+.busqueda{
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    background: white;
     padding: 5px 10px;
-    background-color: white;
-}
-
-.busqueda svg {
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
-}
-
-.busqueda input {
-    border: none;          
-    outline: none;         
-    width: 150px;
-}
-
-.icono-user {
-    width: 60px;
-    height: 60px;
-    color: #041f1e;
-}
-
-.login {
-    display: flex;
-    align-items: center;
-}
-
-
-/* FOOTER */
-.footer {
-    background-color: #cd8b53;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 15px;
-    text-align: center;    
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #ffffff
-}
-
-.auto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 90px;
     border-radius: 10px;
-    margin: 20px;
-    width: 50px;
 }
 
-.autos{
+.busqueda input{
+    border: none;
+    outline: none;
+}
+
+.icono-user{
+    width: 30px;
+    height: 30px;
+    color: #041f1e;
+    transition: 0.3s;
+}
+
+.icono-user:hover{
+    color: #cda853; 
+    transform: scale(1.1);
+}
+
+/* cartas*/
+.autos-section{
+    padding: 60px 40px;
+}
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 40px;
+    color: gold;
+}
+
+.cards-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
-.auto img{
+.card-auto{
+    width: 280px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,215,0,0.2);
+    transition: 0.4s;
+}
+
+.card-auto:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(255,215,0,0.3);
+}
+
+.card-auto img{
     width: 100%;
-    height: auto;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
 }
-/* carrusel de imagenes */
+
+.card-auto h3{
+    color: gold;
+}
+
+/* ========================= */
+/* TU CARRUSEL ORIGINAL */
+/* ========================= */
+
 .slider-box{
     width: 1024px;
-    height: auto;
-
+    margin: 50px auto;
+    overflow: hidden;
 }
+
 .slider-box ul{
-    animation: slide 20s infinite;
     display: flex;
     padding: 0;
     width: 400%;
-    
-    
+    animation: slide 20s infinite;
 }
+
 .slider-box li{
-    position: relative;
     list-style: none;
     width: 100%;
 }
+
 .slider-box img{
-    width: 90%;
-    height: auto;
-    display: block;
+    width: 100%;
 }
+
+/* animación ORIGINAL */
 @keyframes slide{
     0% {margin-left: 0;}
     20% {margin-left: 0;}
     25% {margin-left: -50%;}
     45% {margin-left: -50%;}
     50% {margin-left: -100%;}
-    70% {margin-left: -100%;}   
+    70% {margin-left: -100%;}
     75% {margin-left: -150%;}
     95% {margin-left: -150%;}
     100% {margin-left: -200%;}
+}
 
+/* FOOTER */
+.footer{
+    background: linear-gradient(135deg, #cd8b53, #9b7625);
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+/* res´pnsive tablet*/
+@media (max-width: 1024px){
+
+    .menu{
+        gap: 20px;
+    }
+
+    .titulo-seccion{
+        font-size: 32px;
+    }
+
+    .cards-container{
+        gap: 20px;
+    }
+
+    .card-auto{
+        width: 220px;
+    }
+
+    .slider-box{
+        width: 90%;
+    }
+}
+/*responsive celular*/
+@media (max-width: 768px){
+
+    /* NAVBAR */
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .right{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* CARDS */
+    .cards-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-auto{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .titulo-seccion{
+        font-size: 26px;
+    }
+
+    /* SLIDER */
+    .slider-box{
+        width: 100%;
+    }
+
+    .slider-box img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+/* hacer que sea tablet responsive */
+@media (max-width: 480px){
+
+    .logo, .texto{
+        height: 50px;
+    }
+
+    .busqueda input{
+        width: 100px;
+    }
+
+    .icono-user{
+        width: 40px;
+    }
+
+    .titulo-seccion{
+        font-size: 22px;
+    }
+
+    .card-auto{
+        padding: 15px;
+    }
+
+    .card-auto img{
+        height: 150px;
+    }
+}
+
+.logo{
+    height: 69px;
+    width: auto;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }

@@ -6,7 +6,7 @@ body{
 
 /* HEADER */
 header{
-    background-color: #cd8b53;
+    background-color: transparent;
     border-radius: 20px;
     margin: 20px;
     padding: 10px;
@@ -18,10 +18,12 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+
 .brand{
     display: flex;
     align-items: center;
 }
+
 /* logo */
 .logo{
     height: 69px;
@@ -29,6 +31,7 @@ nav{
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
 }
+
 /* texto logo */
 .texto{
     height: 69px;
@@ -40,7 +43,7 @@ nav{
 /* MENÚ */
 .menu{
     display: flex;
-    gap: 40px; /* mejor que margin-left */
+    gap: 40px;
     margin: 0;
     padding: 0;
 }
@@ -55,7 +58,7 @@ nav{
     font-size: 15px;
 }
 
-/* CONTENEDOR DERECHA (busqueda + login) */
+/* CONTENEDOR DERECHA */
 .right{
     display: flex;
     align-items: center;
@@ -67,7 +70,6 @@ nav{
 .busqueda {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 10px;
     padding: 5px 10px;
     background-color: white;
@@ -96,17 +98,48 @@ nav{
     align-items: center;
 }
 
+/* CONTENEDOR PRINCIPAL */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+/* TARJETA LOGIN */
 .caja{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
-    margin: 20px auto;
-    padding: 20px;
+    padding: 30px;
     width: 300px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
 }
 
+/* ICONO USUARIO */
+.avatar{
+    width: 70px;
+    height: 70px;
+    background-color: #0f3d3e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.avatar svg{
+    width: 35px;
+    height: 35px;
+    color: white;
+}
+
+/* FORM */
 form {
     display: flex;
     flex-direction: column;
@@ -114,30 +147,188 @@ form {
     width: 100%;
 }
 
+/* INPUTS */
 .input{
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 14px;
-    background-color: #041f1eb3;
-    
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-.input input{
-    background-color: #041f1e;
-    color: white;
-}
-
+/* BOTÓN */
 button {
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    background-color: #a17b27;
+    border-radius: 20px;
+    background-color: #0f3d3e;
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
+button:hover{
+    background-color: #092c2d;
+}
+
+/* TITULO */
 h2{
-    color: #041f1e;
+    color: #0f3d3e;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* FONDO */
+.fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* 🔥 ANIMACIÓN DE ENTRADA */
+.caja{
+    animation: aparecer 0.8s ease-out;
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 🔥 AVATAR CON EFECTO FLOTANTE */
+.avatar{
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-8px); }
+    100%{ transform: translateY(0); }
+}
+
+/* 🔥 INPUTS INTERACTIVOS */
+.input{
+    transition: all 0.3s ease;
+}
+
+.input:focus{
+    background-color: white;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(15, 61, 62, 0.4);
+}
+
+/* 🔥 BOTÓN ANIMADO */
+button{
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:active{
+    transform: scale(0.97);
+}
+
+/* 📱 MOBILE (hasta 768px) */
+@media (max-width: 768px){
+
+    /* NAVBAR */
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .right{
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0;
+    }
+
+    /* BUSCADOR */
+    .busqueda input{
+        width: 120px;
+    }
+
+    /* CONTENEDOR LOGIN */
+    .container{
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    /* TARJETA */
+    .caja{
+        width: 100%;
+        max-width: 320px;
+        padding: 25px;
+    }
+
+    /* AVATAR */
+    .avatar{
+        width: 60px;
+        height: 60px;
+        margin-top: -50px;
+    }
+
+    .avatar svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    /* TITULO */
+    h2{
+        font-size: 20px;
+    }
+
+    /* INPUTS */
+    .input{
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    /* BOTÓN */
+    button{
+        font-size: 14px;
+        padding: 9px;
+    }
+}
+
+
+/* 📱 CELULARES CHICOS (hasta 480px) */
+@media (max-width: 480px){
+
+    .menu{
+        display: none; /* opcional: ocultar menú */
+    }
+
+    .busqueda input{
+        width: 100px;
+    }
+
+    .caja{
+        max-width: 280px;
+        padding: 20px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
 }
