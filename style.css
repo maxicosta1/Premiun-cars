@@ -12,10 +12,18 @@ body{
 
 /* HEADER */
 header{
-    background: linear-gradient(135deg, #cd8b53, #9b7625);
+    background: rgba(205, 139, 83, 0.25); /* transparencia */
+    backdrop-filter: blur(15px);          /* desenfoque */
+    -webkit-backdrop-filter: blur(15px);  /* soporte Safari */
+
     border-radius: 20px;
     margin: 20px;
     padding: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2); /* borde glass */
+    box-shadow: 
+        0 8px 32px rgba(0,0,0,0.25),           /* sombra */
+        inset 0 1px 0 rgba(255,255,255,0.3);   /* brillo interno */
 }
 
 nav{
@@ -118,7 +126,7 @@ nav{
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 40px;
 }
 
@@ -135,7 +143,6 @@ nav{
 
 .card-auto:hover{
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 20px 40px rgba(255,215,0,0.3);
 }
 
 .card-auto img{
@@ -190,11 +197,24 @@ nav{
 
 /* FOOTER */
 .footer{
-    background: linear-gradient(135deg, #cd8b53, #9b7625);
+    background: rgba(205, 139, 83, 0.25); /* transparencia */
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
     margin: 20px;
     padding: 15px;
     text-align: center;
     border-radius: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 
+        0 8px 32px rgba(0,0,0,0.25),
+        inset 0 1px 0 rgba(255,255,255,0.3);
+
+    position: relative;
+    overflow: hidden;
 }
 /* res´pnsive tablet*/
 @media (max-width: 1024px){
