@@ -242,7 +242,7 @@ button:active{
     transform: scale(0.97);
 }
 
-/* 📱 MOBILE (hasta 768px) */
+/* MOBILE (hasta 768px) */
 @media (max-width: 768px){
 
     /* NAVBAR */
