@@ -316,7 +316,7 @@ button:active{
 @media (max-width: 480px){
 
     .menu{
-        display: none; /* opcional: ocultar menú */
+        /* agregar codigo si*/
     }
 
     .busqueda input{
