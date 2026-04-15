@@ -39,8 +39,19 @@ nav{
     align-items: center;
 }
 
-.logo, .texto{
+.texto{
     height: 69px;
+    
+    border-top-right-radius: 13px;
+    
+    border-bottom-right-radius: 13px;
+}
+.logo{
+    height: 69px;
+    
+    border-top-left-radius: 13px;
+    
+    border-bottom-left-radius: 13px;
 }
 
 /* MENU */
