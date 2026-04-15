@@ -137,10 +137,7 @@ nav{
     transition: 0.4s;
 
 }
-.card-auto img{
-    max-width: 100%;
-    max-height: 100%;
-}
+
 
 .card-auto:hover{
     transform: translateY(-10px) scale(1.03);
@@ -148,7 +145,7 @@ nav{
 
 .card-auto img{
     width: 100%;
-    height: 180px;
+    height: 80%%;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -263,6 +260,7 @@ nav{
 
     .card-auto img{
         width: 100%;
+        height: 100%;
     }
 }
 
