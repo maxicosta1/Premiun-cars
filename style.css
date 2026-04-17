@@ -312,9 +312,9 @@ nav{
 }
 .texto_contacto{
     display: flex;
-    justify-items: center;
+    justify-content: center;
 }
 .textito{
     display: flex;
-    justify-items: center;
+    justify-content: center;
 }
