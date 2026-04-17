@@ -285,3 +285,36 @@ nav{
     display: block;
     z-index: 10; 
 }
+
+.contacto{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contacto h3{
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.contacto a{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.texto_contacto{
+    display: flex;
+    justify-items: center;
+}
+.textito{
+    display: flex;
+    justify-items: center;
+}
