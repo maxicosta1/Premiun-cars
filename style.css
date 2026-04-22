@@ -44,6 +44,13 @@ nav{
 .brand{
     display: flex;
     align-items: center;
+    
+}
+
+.brand a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .texto{
@@ -52,6 +59,8 @@ nav{
     border-top-right-radius: 13px;
     
     border-bottom-right-radius: 13px;
+
+    margin-left: 0;
 }
 .logo{
     height: 69px;
@@ -59,6 +68,8 @@ nav{
     border-top-left-radius: 13px;
     
     border-bottom-left-radius: 13px;
+
+    margin-right: 0;
 }
 
 /* MENU */
@@ -205,14 +216,22 @@ nav{
 .footer{
     background: rgba(205, 139, 83, 0.25);
     backdrop-filter: blur(15px);
-
     margin: 20px;
     padding: 15px;
     text-align: center;
     border-radius: 20px;
-
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+.redes a{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Colores */
+.redes a:nth-child(1){ color: #1877f2; } /* Facebook */
+.redes a:nth-child(2){ color: #e4405f; } /* Instagram */
+.redes a:nth-child(3){ color: #000000; } /* X */
 
 /* ========================= */
 /* RESPONSIVE: POR MAXI */
@@ -354,3 +373,4 @@ nav{
     color: rgb(180, 179, 179);
     margin-top: -20px;
 }
+
