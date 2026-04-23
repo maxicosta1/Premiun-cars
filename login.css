@@ -243,8 +243,8 @@ button:active{
     transform: scale(0.97);
 }
 
-/* MOBILE (hasta 768px) */
-@media (max-width: 768px){
+/* MOBILE (hasta 1000px) */
+@media (max-width: 1000px){
 
     /* NAVBAR */
     nav{
