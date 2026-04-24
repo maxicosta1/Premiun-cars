@@ -7,9 +7,9 @@
     --fondo-gradiente-2: #000000;
     --blanco: white;
     --negro: black;
-    --dorado: gold;
+    --dorado: #ffd700;
 
-    --header-bg: rgba(205, 139, 83, 0.25);
+    --header-bg: #cc8c5440;
     --borde-blanco: rgba(255, 255, 255, 0.2);
     --sombra: rgba(0,0,0,0.25);
     --brillo: rgba(255,255,255,0.3);
@@ -51,7 +51,7 @@ header{
         inset 0 1px 0 var(--brillo);
 }
 .textoslargos{
-    font-size: 30px;
+    font-size: 32px;
     text-align: center;
     margin: 40px;
     background-color: var(--transparente);
@@ -178,6 +178,11 @@ nav{
     border: 1px solid var(--card-borde);
     transition: 0.4s;
     padding-bottom: 60px;
+    height: fit-content;
+    
+}
+.card-auto p{
+    font-size: 20px;
 }
 
 
@@ -194,6 +199,7 @@ nav{
 
 .card-auto h3{
     color: var(--dorado);
+    font-size: 20px;
 }
 
 /* SLIDER */
@@ -264,13 +270,17 @@ nav{
     padding: 10px 20px;
     margin: 5px;
     max-width: 38vw;
-    height: 35vh;
+    height: fit-content;
     background: var(--card-bg);
     border-radius: 20px;
     text-align: left;
     backdrop-filter: blur(10px);
     border: 1px solid var(--card-borde);
     transition: 0.4s;
+}
+.contenedor-servicio li,p{
+    font-size: 18px;
+
 }
 
 .nombre-servicio{
@@ -297,7 +307,11 @@ nav{
     .logo, .texto{
         height: 60px;
     }
+   
 }
+
+
+
 
 /* CELULAR */
 @media (max-width: 1000px){
