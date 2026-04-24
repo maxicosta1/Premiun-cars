@@ -106,12 +106,14 @@ nav{
 
 .menu li{
     list-style: none;
+    font-size: 18px;
 }
 
 .menu a{
     text-decoration: none;
     color: var(--blanco);
     position: relative;
+  
 }
 
 .menu a::after{
@@ -279,7 +281,7 @@ nav{
     transition: 0.4s;
 }
 .contenedor-servicio li,p{
-    font-size: 18px;
+    font-size: 22px;
 
 }
 
